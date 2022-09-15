@@ -60,8 +60,8 @@ fun ArtSpaceApp() {
     )
 
     var state by remember{ mutableStateOf( 0) }
-    var resId = painterResourceIds[state] // subtract to get correct index
-    var name = artistNames[state]
+    val resId = painterResourceIds[state] // subtract to get correct index
+    val name = artistNames[state]
 
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -90,8 +90,8 @@ fun ArtworkWall(resId: Int) {
             painter = painterResource(resId),
             contentDescription = null,
             modifier = Modifier
-                .width(320.dp)
-                .height(400.dp)
+                .fillMaxWidth(0.75f)
+                .fillMaxHeight(0.50f)
                 .padding(32.dp),
             contentScale = ContentScale.Crop
         )
