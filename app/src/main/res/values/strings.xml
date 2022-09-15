@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="source_name">Source: %s</string>
+    <string name="artist_name">%s</string>
+</resources>
